@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputViewController" customModule="demo" customModuleProvider="target">
+            <connections>
+                <outlet property="idcardField" destination="3ic-CM-xF2" id="Yzl-KO-3AN"/>
+                <outlet property="nameField" destination="H3f-bQ-e2h" id="DuN-3P-WiG"/>
+                <outlet property="nextButton" destination="gdS-zB-NyQ" id="Bve-c7-EDu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓名" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H3f-bQ-e2h">
+                    <rect key="frame" x="5" y="84" width="590" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="trg-P8-0tH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身份证" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-CM-xF2">
+                    <rect key="frame" x="5" y="132" width="590" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Pey-92-QWT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdS-zB-NyQ">
+                    <rect key="frame" x="5" y="192" width="590" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NKL-XF-BzX"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="KKW-y4-UyP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="H3f-bQ-e2h" secondAttribute="trailing" constant="5" id="037-La-Ume"/>
+                <constraint firstAttribute="trailing" secondItem="3ic-CM-xF2" secondAttribute="trailing" constant="5" id="7X8-3o-evZ"/>
+                <constraint firstAttribute="trailing" secondItem="gdS-zB-NyQ" secondAttribute="trailing" constant="5" id="Dt2-1r-hG0"/>
+                <constraint firstItem="3ic-CM-xF2" firstAttribute="top" secondItem="H3f-bQ-e2h" secondAttribute="bottom" constant="8" id="TfF-1z-2FY"/>
+                <constraint firstItem="H3f-bQ-e2h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="Vtm-xu-f8P"/>
+                <constraint firstItem="gdS-zB-NyQ" firstAttribute="top" secondItem="3ic-CM-xF2" secondAttribute="bottom" constant="20" id="eWc-AM-cen"/>
+                <constraint firstItem="3ic-CM-xF2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="mta-6D-w3W"/>
+                <constraint firstItem="H3f-bQ-e2h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="qun-hR-B6d"/>
+                <constraint firstItem="gdS-zB-NyQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="xfH-Xz-jEF"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
